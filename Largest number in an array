@@ -1,0 +1,14 @@
+public class LargestElementFinder {
+    public static void main(String[] args) {
+        int[] arr = {10, 3, 5, 7, 2, 12};
+        int max = arr[0]; // Assume the first element is the larges
+
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i]; // Update max if the current element is greater
+            }
+        }
+
+        System.out.println("The largest element is: " + max); // Output: The largest element is: 12
+    }
+}
