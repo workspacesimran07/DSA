@@ -1,0 +1,17 @@
+public class FactorialIterative {
+    public static void main(String[] args) {
+        int num = 5;
+        // Use long to store potentially large results
+        long factorial = 1;
+
+        if (num < 0) {
+            System.out.println("Factorial is not defined for negative numbers.");
+        } else {
+            for (int i = 1; i <= num; i++) {
+                factorial *= i; // Equivalent to factorial = factorial * i;
+            }
+            System.out.println("Factorial of " + num + " is: " + factorial);
+        }
+    }
+}
+// Output: Factorial of 5 is: 120
